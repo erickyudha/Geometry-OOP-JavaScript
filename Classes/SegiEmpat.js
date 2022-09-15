@@ -25,6 +25,7 @@ class SegiEmpat extends BangunDatar {
     }
 
     getLuas() { return this.sisi[0] * this.sisi[1] }
+    getKeliling() { return this.sisi.reduce((sum, val) => { return sum + val }) }
     getSisi() { return this.sisi }
 
     draw() {

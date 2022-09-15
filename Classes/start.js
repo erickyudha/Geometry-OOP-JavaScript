@@ -10,7 +10,9 @@ const mySegitigaSiku = new SegitigaSiku("segitiga_siku", "#00f213", 30, 40, 50);
 
 docBody.append(myLingkaran.draw());
 docBody.append(myPersegi.draw());
+console.log(myPersegi.getLuas());
 docBody.append(myPersegiPanjang.draw());
 docBody.append(mySegitigaSamaSisi.draw());
+console.log(mySegitigaSamaSisi.getLuas());
 docBody.append(mySegitigaSamaKaki.draw());
 docBody.append(mySegitigaSiku.draw());

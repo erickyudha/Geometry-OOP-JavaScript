@@ -9,14 +9,7 @@ class BangunDatar {
     };
 
     getLuas() { };
-    getKeliling() {
-        let sum = 0;
-        sisi.forEach(x => {
-            sum += x;
-        });
-
-        return sum;
-    };
+    getKeliling() { };
     getWarna() {
         return this.warna;
     };

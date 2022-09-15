@@ -22,6 +22,7 @@ class Segitiga extends BangunDatar {
         const area = Math.sqrt(s * (s - a) * (s - b) * (s * c));
         return area;
     }
+    getKeliling() { return this.sisi.reduce((sum, val) => { return sum + val }) }
     getSisi() { return this.sisi }
 
     draw() {
