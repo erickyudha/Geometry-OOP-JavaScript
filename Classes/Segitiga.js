@@ -19,7 +19,7 @@ class Segitiga extends BangunDatar {
     getLuas() {
         // Using Heron's Formula to find triangle area with 3 sides known
         const s = this.getKeliling() / 2
-        const area = Math.sqrt(s * (s - a) * (s - b) * (s * c));
+        const area = Math.sqrt(s * (s - this.sisi[0]) * (s - this.sisi[1]) * (s * this.sisi[2]));
         return area;
     }
     getKeliling() { return this.sisi.reduce((sum, val) => { return sum + val }) }
