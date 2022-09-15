@@ -1,7 +1,7 @@
 const docBody = document.getElementById("root");
 //---------------------------------
 
-const myLingkaran = new Lingkaran("lingkaran", "#0f2", 25);
+const myLingkaran = new Lingkaran("lingkaran", "#0f2", 70);
 const myPersegi = new Persegi("persegi", "#f0f", 50);
 const myPersegiPanjang = new PersegiPanjang("persegi_panjang", "#ff0", 40, 60);
 const mySegitigaSamaSisi = new SegitigaSamaSisi("segitiga_sisi", "#f0f0f0", 40);
@@ -16,3 +16,5 @@ docBody.append(mySegitigaSamaKaki.draw());
 docBody.append(mySegitigaSiku.draw());
 
 console.log(myPersegi.getLuas());
+console.log(mySegitigaSiku.getKeliling()); // 
+console.log(myLingkaran.getKeliling()); //  440

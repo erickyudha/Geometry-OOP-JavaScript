@@ -16,10 +16,6 @@ class SegiEmpat extends BangunDatar {
         if (this.constructor === SegiEmpat) {
             throw new Error("Abstract class can't be instantiated.");
         }
-        if (sisi.length !== 4) {
-            throw new Error("Segi Empat harus memiliki 4 sisi saja.");
-        }
-
 
         this.sisi = sisi;
     }
