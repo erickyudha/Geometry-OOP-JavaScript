@@ -29,6 +29,8 @@ class SegiEmpat extends BangunDatar {
     getSisi() { return this.sisi }
 
     draw() {
+        const root = document.createElement("div");
+
         const shape = document.createElement("div");
         shape.id = this.name;
 
@@ -36,6 +38,18 @@ class SegiEmpat extends BangunDatar {
         shape.style.height = this.sisi[1] + "px";
         shape.style.backgroundColor = this.warna;
 
-        return shape;
+        root.append(shape);
+
+        const shapeText = document.createElement("h2");
+        shapeText.innerHTML = this.name;
+
+        root.append(shapeText);
+        root.style.borderStyle = "solid";
+        root.style.borderColor = "#000";
+        root.style.width = "250px";
+        root.style.height = "250px";
+        root.style.margin = "10px 10px"
+
+        return root;
     }
 }

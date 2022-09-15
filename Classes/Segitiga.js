@@ -26,6 +26,8 @@ class Segitiga extends BangunDatar {
     getSisi() { return this.sisi }
 
     draw() {
+        const root = document.createElement("div");
+
         const canvas = document.createElement("canvas");
         canvas.id = this.name;
 
@@ -55,6 +57,19 @@ class Segitiga extends BangunDatar {
         ctx.fillStyle = this.warna;
         ctx.fill();
 
-        return canvas;
+        root.append(canvas);
+
+        const shapeText = document.createElement("h2");
+        shapeText.innerHTML = this.name;
+
+        root.append(shapeText);
+        root.style.borderStyle = "solid";
+        root.style.borderColor = "#000";
+        root.style.width = "250px";
+        root.style.height = "250px";
+        root.style.margin = "10px 10px"
+
+
+        return root;
     }
 }
