@@ -13,6 +13,10 @@ class Segitiga extends BangunDatar {
         *** c = sisi samping kanan
         */
         super(name, warna);
+        if (this.constructor === Segitiga) {
+            throw new Error("Abstract class can't be instantiated.");
+        }
+
         this.sisi = sisi;
     }
 

@@ -19,7 +19,7 @@ class BangunDatar {
     getLuas() { };
     getKeliling() { };
     getWarna() {
-        return this.warna;
+        return this._warna;
     };
     draw() { };
 }
