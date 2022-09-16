@@ -54,7 +54,7 @@ class Segitiga extends BangunDatar {
         ctx.moveTo(A[0], A[1]);
         ctx.lineTo(B[0], B[1]);
         ctx.lineTo(C[0], C[1]);
-        ctx.fillStyle = this.warna;
+        ctx.fillStyle = this._warna;
         ctx.fill();
 
         root.append(canvas);

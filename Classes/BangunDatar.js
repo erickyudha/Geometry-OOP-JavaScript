@@ -1,3 +1,11 @@
+/* Kelompok 3
+- ERICK YUDHA PRATAMA SUKKU
+- FAUZI DARMAWAN
+- ARBIANSYAH
+- RAHMAT FAJRI NANDIPINTO
+- MIDHAT DJA'FAR SIDIK 
+*/
+
 class BangunDatar {
     constructor(name, warna) {
         if (this.constructor === BangunDatar) {
@@ -5,7 +13,7 @@ class BangunDatar {
         }
 
         this.name = name;
-        this.warna = warna;
+        this._warna = warna;
     };
 
     getLuas() { };

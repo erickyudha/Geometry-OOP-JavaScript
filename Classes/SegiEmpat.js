@@ -32,7 +32,7 @@ class SegiEmpat extends BangunDatar {
 
         shape.style.width = this.sisi[0] + "px";
         shape.style.height = this.sisi[1] + "px";
-        shape.style.backgroundColor = this.warna;
+        shape.style.backgroundColor = this._warna;
 
         root.append(shape);
 

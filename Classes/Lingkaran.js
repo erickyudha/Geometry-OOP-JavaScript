@@ -20,7 +20,7 @@ class Lingkaran extends BangunDatar {
         shape.style.width = (this.radius * 2) + "px";
         shape.style.height = (this.radius * 2) + "px";
         shape.style.borderRadius = "50%";
-        shape.style.backgroundColor = this.warna;
+        shape.style.backgroundColor = this._warna;
 
         root.append(shape);
 
